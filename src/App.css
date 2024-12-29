@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+}
+
+.main-container {
+	width: 100vw;
+}
+
+.main-container > * {
+	display: flex;
+	height: 100vh;
+	background: black;
+	border: white 1px solid;
+}
+
+.sub-container > div {
+	display: flex;
+	border: white 1px dotted;
+	height: 100%;
+	width: 50vw;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.sub-container div > * {
+	color: red;
+}
