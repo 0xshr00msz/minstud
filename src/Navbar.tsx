@@ -7,8 +7,7 @@ export default function NavBar() {
         <a href="#intro">Intro</a>
         <a href="#culture">Culture</a>
         <a href="#map">Map</a>
-        <a href="#issues">Issues</a>
-	<a href="#facts">Facts</a>
+        <a href="#more">More</a>
       </div>
   );
 }

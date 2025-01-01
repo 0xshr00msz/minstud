@@ -1,6 +1,6 @@
 export default function Facts() {
   return (
-    <section id="facts">
+    <section id="more">
       <h2>Interesting Facts</h2>
       <ul>
         <li>Home to the Kitanglad Mountain Range, including Mount Dulang-Dulang and Mount Kitanglad.</li>

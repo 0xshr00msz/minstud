@@ -47,6 +47,7 @@ Central to Bukidnon's identity is its connection to nature and spirituality. The
 These deities guide and protect their people, symbolizing the harmony between the tribes and the natural world.
 	 </p>
       </div>
+      <h5>...</h5>
     </div>
   );
 }
