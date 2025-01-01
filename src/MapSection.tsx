@@ -5,8 +5,10 @@ export default function MapSection(){
 	const [municipality, setMunicipality] = useState(null);
 
 	const getMunicipality = (e: React.MouseEvent<SVGElement>) => {
-		setMunicipality(e.target.parentElement.id)
-	}
+  		const target = e.currentTarget as SVGElement;
+  		const parent = target.parentElement as HTMLElement | null;
+  		setMunicipality(parent?.id || "");
+	};
 
 	const noMunicipality = () => {
 		setMunicipality(null)
