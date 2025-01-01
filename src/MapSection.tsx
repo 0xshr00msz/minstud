@@ -18,7 +18,7 @@ export default function MapSection(){
 		  <p>The province now composes of 21 Municipalities</p>
     		  <div className='sub-container'>
 		    <div className='sub-container-left'>
-		      {municipality ? <h2>{municipality}</h2> : <h2>(Hover over Map)</h2>}
+		      {municipality ? <h2>{municipality}</h2> : <h6>(Hover over Map)</h6>}
 		    </div>
 		    <div className='sub-container-right'>
 		      <MapSVG handleHover={getMunicipality} leaveHover={noMunicipality}/>

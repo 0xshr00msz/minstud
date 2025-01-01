@@ -43,11 +43,21 @@ svg {
 }
 
 .sub-container > div {
-	width: 45vw;
-	border: white 1px dotted;
 	text-align: center;
 	align-content: center;
 }
+
+#map > p {
+	padding-bottom: 30px;
+}
+
+.sub-container-left {
+	width: 20vw;
+}
+.sub-container-right {
+	width: 30vw;
+}
+
 
 
 .Nav {
@@ -55,7 +65,7 @@ svg {
 	background: rgba(255, 255, 255, 1);
 	position: fixed;
 	display: flex;
-	justify-content: right;
+	justify-content: center;
 	flex-direction: row;
 	list-style-type: none;
 	gap: 50px;
@@ -66,14 +76,7 @@ svg {
 	text-decoration: none;
 	color: black;
 	font-size: 15px;
-	padding: 10px 50px 10px 0px;	
-}
-
-.Nav > img {
-	flex-grow: 1;
-	width: 20px;
-	height: 20px;
-	padding: 0 50px 0 50px;
+	padding: 10px 25px 10px 25px;	
 }
 
 #intro, #culture, #more {
@@ -81,6 +84,10 @@ svg {
 	flex-direction: column;
 	text-align: center;
 	padding: 50px 30vw 0 30vw;
+}
+
+#more {
+	min-height: 85vh;
 }
 
 #intro {
@@ -112,7 +119,7 @@ svg {
 	flex-direction: column;
 	gap: 10px;
 	min-width: 100vw;
-	padding-top: 40px;
+	padding: 40px 0 40px 0;
 	margin: 0 -30vw 0 -30vw;
 }
 
@@ -138,6 +145,7 @@ svg {
 
 h1 {
 	font-size: 100px;
+	margin: 0 -200px 0 -200px;
 }
 h2 {
 	font-size: 38px;
@@ -146,14 +154,72 @@ h3 {
 	font-size: 15px;
 }
 h5 {
-	color: rgba(255,255,255,0.2);
+	color: rgba(0,0,0,0.3);
 	font-size: 150px;
 	padding-bottom: 70px;
 	font-weight: 1000;
+}
+h6 {
+	font-size: 30px;
 }
 p, li {
 	font-size: 15px;
 }
 p {
 	padding: 10px 0 10px 0;	
+}
+
+@media only screen and (max-width: 900px){
+	#intro, #culture, #more {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding: 50px 20vw 0 20vw;
+	}
+	
+	.Nav {
+		width: 100vw;
+	}
+
+	.Nav > a {
+		font-size: 12px;
+		padding: 10px 5px 10px 5px;	
+	}
+	h1 {
+		font-size: 60px;
+		margin: 0 -20px 0 -20px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 15px;
+	}
+	h5 {
+		color: rgba(0,0,0,0.3);
+		font-size: 150px;
+		padding-bottom: 70px;
+		font-weight: 1000;
+	}
+	h6 {
+		font-size: 20px;
+	}
+	.sub-container {
+		flex-direction: column;
+	}
+	.sub-container > div {
+		width: 70vw;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#intro, #culture, #more {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding: 50px 15vw 0 15vw;
+	}
+	.sub-container > div {
+		width: 100vw;
+	}
 }
