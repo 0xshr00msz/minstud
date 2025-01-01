@@ -1,14 +1,32 @@
-export default function Facts() {
+import { useState } from 'react'
+
+export default function More() {
+  const [isShown, setIsShown] = useState<Boolean>(false);
+
+  const handleOnClick = () => {
+	setIsShown(!isShown)
+  }
+
   return (
-    <section id="more">
-      <h2>Interesting Facts</h2>
-      <ul>
-        <li>Home to the Kitanglad Mountain Range, including Mount Dulang-Dulang and Mount Kitanglad.</li>
-        <li>Bukidnon hosts one of the largest pineapple plantations in the Philippines, operated by Del Monte.</li>
-        <li>Kaamulan Festival showcases the rituals and culture of the province's seven indigenous tribes.</li>
-        <li>Home to seven indigenous tribes: Bukidnon, Higaonon, Manobo, Matigsalug, Talaandig, Tigwahanon, and Umayamnon.</li>
-      </ul>
-    </section>
+    <div id="more">
+	<h2>Learn More About Bukidnon</h2>
+	<div className='dropdown-menu'>
+	  <div className='dropdown-button' onClick={handleOnClick}><h4>Natural Wonders and Cultural Treasures</h4></div>
+	    {isShown && 
+	    <div className='dropdown-content'>
+	      <h3>Header</h3>
+	      <p>Para</p>
+	      <p>Para</p>
+	      <p>Para</p>
+	      <p>Para</p>
+	      <p>Para</p>
+	      <p>Para</p>
+	      <p>Para</p>
+	    </div>} 
+	  <div className='dropdown-button'><h4>Challenges and Hopes for the Future</h4></div>
+	  <div className='dropdown-button'><h4>Did You Know? (Interesting Facts)</h4></div>
+	</div>
+    </div>
   );
 }
 
