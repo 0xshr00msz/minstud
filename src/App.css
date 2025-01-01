@@ -11,6 +11,23 @@
 	min-height: 100vh;
 }
 
+svg {
+	transform: scale(135%);
+	max-height: 70%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.paths path {
+	fill: white;
+	transition: fill 0.5s;
+}
+
+.paths path:hover {
+	fill: black;
+	transition: fill 0.5s;
+}
+
 #map {
 	flex-direction: column;
 	justify-content: center;
@@ -20,7 +37,7 @@
 
 .sub-container {
 	display: flex;
-	min-height: 80vh;
+	height: 80vh;
 	flex-direction: row;
 	justify-content: center;
 }
@@ -42,6 +59,7 @@
 	flex-direction: row;
 	list-style-type: none;
 	gap: 50px;
+	z-index: 100000;
 }
 
 .Nav > a {
