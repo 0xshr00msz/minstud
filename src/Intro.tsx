@@ -1,14 +1,11 @@
 export default function Intro() {
   return (
-    <section id="intro">
+    <div id="intro">
       <h1>Welcome to Bukidnon</h1>
-      <p>Bukidnon, home to the Bukidnon people (forest dwellers), is located
-         in the district of Misamis. Known for its rich culture, history, 
-         and natural beauty, it holds a special place in the Philippines' 
-         heritage.
+      <p>
+	As you enter Bukidnon, you step into the heart of Mindanao. Known as the "land of the forest dwellers," Bukidnon is a province rich in culture, history, and breathtaking landscapes. Nestled in the district of Misamis, it is a sanctuary of tradition and natural wonders.
       </p>
-      <p>Estimated population: 13,000 (as of 1889)</p>
-    </section>
+    </div>
   );
 }
 
