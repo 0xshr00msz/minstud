@@ -16,15 +16,19 @@ export default function More() {
 	    <div className='dropdown-content'>
 	      <h3>Header</h3>
 	      <p>Para</p>
-	      <p>Para</p>
-	      <p>Para</p>
-	      <p>Para</p>
-	      <p>Para</p>
-	      <p>Para</p>
-	      <p>Para</p>
 	    </div>} 
 	  <div className='dropdown-button'><h4>Challenges and Hopes for the Future</h4></div>
+	    {isShown && 
+	    <div className='dropdown-content'>
+	      <h3>Header</h3>
+	      <p>Para</p>
+	    </div>} 
 	  <div className='dropdown-button'><h4>Did You Know? (Interesting Facts)</h4></div>
+	    {isShown && 
+	    <div className='dropdown-content'>
+	      <h3>Header</h3>
+	      <p>Para</p>
+	    </div>} 
 	</div>
     </div>
   );
