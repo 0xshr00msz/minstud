@@ -2,8 +2,7 @@ import MapSVG from './MapSVG.tsx'
 import { useState } from 'react'
 
 export default function MapSection(){
-	const [municipality, setMunicipality] = useState(null);
-
+	const [municipality, setMunicipality] = useState<string | null>(null);
 	const getMunicipality = (e: React.MouseEvent<SVGElement>) => {
   		const target = e.currentTarget as SVGElement;
   		const parent = target.parentElement as HTMLElement | null;
