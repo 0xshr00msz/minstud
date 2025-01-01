@@ -1,11 +1,11 @@
-export default function Lugar(){
+export default function MapSection(){
 	return (
 		<div className='sub-container'>
 			<div className='sub-container-left'>
-				<h1>Left</h1>
+				<h1>(Municipality Name)</h1>
 			</div>
 			<div className='sub-container-right'>
-				<h1>Right</h1>
+				<h1>(Map of Bukidnon)</h1>
 			</div>
 		</div>
 	)

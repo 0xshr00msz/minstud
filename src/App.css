@@ -11,6 +11,7 @@
 	height: 100vh;
 	background: black;
 	border: white 1px solid;
+	padding: 0 20px 0 20px;
 }
 
 .sub-container > div {
@@ -23,5 +24,7 @@
 	align-items: center;
 }
 .sub-container div > * {
+	font-size: 2rem;
 	color: red;
 }
+
