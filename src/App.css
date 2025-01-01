@@ -4,10 +4,14 @@ html {
 
 * {
 	margin: 0;
+	font-family: "Gugi", serif;
+  	font-weight: 400;
+  	font-style: normal;
 }
 
 .main-container {
 	width: 100vw;
+	background: rgba(15, 30, 10, 1);
 }
 
 .main-container > * {
