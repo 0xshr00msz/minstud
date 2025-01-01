@@ -4,7 +4,7 @@ import { useState } from 'react'
 export default function MapSection(){
 	const [municipality, setMunicipality] = useState(null);
 
-	const getMunicipality = (e) => {
+	const getMunicipality = (e: React.MouseEvent<SVGElement>) => {
 		setMunicipality(e.target.parentElement.id)
 	}
 
