@@ -1,16 +1,15 @@
 export default function NavBar() {
   return (
-    <nav>
-      <ul className="Nav">
+      <div className="Nav">
         {/* Include a valid logo element */}
         <img src="logo.png" alt="Logo" className="logo" />
         {/* Add list items */}
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#culture">Culture</a></li>
-        <li><a href="#map">Map</a></li>
-        <li><a href="#issues">Issues</a></li>
-      </ul>
-    </nav>
+        <a href="#intro">Intro</a>
+        <a href="#culture">Culture</a>
+        <a href="#map">Map</a>
+        <a href="#issues">Issues</a>
+	<a href="#facts">Facts</a>
+      </div>
   );
 }
 

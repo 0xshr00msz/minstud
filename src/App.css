@@ -28,3 +28,25 @@
 	color: red;
 }
 
+.Nav {
+	width: 100vw;
+	background: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	display: flex;
+	justify-content: right;
+	flex-direction: row;
+	list-style-type: none;
+	gap: 50px;
+}
+
+.Nav > a {
+	font-size: 25px;
+	padding: 10px 50px 10px 0px;	
+}
+
+.Nav > img {
+	flex-grow: 1;
+	width: 20px;
+	height: 20px;
+	padding: 0 50px 0 50px;
+}

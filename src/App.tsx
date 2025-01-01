@@ -5,7 +5,7 @@ import Intro from './Intro.tsx'
 import Culture from './Culture.tsx'
 import MapSection from './MapSection.tsx'
 import Issues from './Issues.tsx'
- 
+import Facts from './Facts.tsx'
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
 	    <Culture/>
             <MapSection/>
 	    <Issues/>
+	    <Facts/>
 	  </div>
   	</>
     )
