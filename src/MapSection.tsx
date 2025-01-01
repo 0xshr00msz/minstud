@@ -1,11 +1,15 @@
 export default function MapSection(){
 	return (
-		<div className='sub-container'>
-			<div className='sub-container-left'>
-				<h1>(Municipality Name)</h1>
-			</div>
-			<div className='sub-container-right'>
-				<h1>(Map of Bukidnon)</h1>
+		<div id='map'>
+			<h2>Bukidnon Today</h2>
+			<p>The province now composes of 21 Municipalities</p>
+			<div className='sub-container'>
+				<div className='sub-container-left'>
+					<h3>(Municipality Name)</h3>
+				</div>
+				<div className='sub-container-right'>
+					<h3>(Map of Bukidnon)</h3>
+				</div>
 			</div>
 		</div>
 	)
