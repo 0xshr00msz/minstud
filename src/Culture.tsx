@@ -8,13 +8,13 @@ For centuries, the Bukidnon people, also called "Buquidnons," have lived along t
          </p>
          <p>The province is home to <b>seven indigenous tribes</b>:</p>
          <div className='list'>
-           <div>Bukidnon</div>
-           <div>Higaonon</div>
-           <div>Manobo</div>
-           <div>Matigsalug</div>
-           <div>Talaandig</div>
-           <div>Tigwahanon</div>
-           <div>Umayamnon</div>
+           <div id='bukidnon'>Bukidnon</div>
+           <div id='higaonon'>Higaonon</div>
+           <div id='manobo'>Manobo</div>
+           <div id='matigsalug'>Matigsalug</div>
+           <div id='talaandig'>Talaandig</div>
+           <div id='tigwahanon'>Tigwahanon</div>
+           <div id='umayamnon'>Umayamnon</div>
          </div>
          <p>
 	Each tribe holds unique traditions, languages, and wisdom passed down through generations. Together, they shape the vibrant culture of Bukidnon.

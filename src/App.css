@@ -1,17 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Exa:wght@100..900&family=Lexend:wght@100..900&family=Patua+One&display=swap');
+
+#bukidnon { background: url("./assets/Bukidnon.jpg"); }
+#higaonon { background: url("./assets/Higaonon.jpg"); }
+#manobo { background: url("./assets/Manobo.jpg"); }
+#matigsalug { background: url("./assets/Matigsalug.jpg"); }
+#talaandig { background: url("./assets/Talaandig.jpg"); }
+#tigwahanon { background: url("./assets/Tigwahanon.jpg"); }
+#umayamnon { background: url("./assets/Umayamnon.jpg"); }
+
 html {
 	scroll-behavior: smooth;
 }
 
 * {
 	margin: 0;
-	font-family: "Gugi", serif;
-  	font-weight: 400;
+	font-family: "Patua", serif;
   	font-style: normal;
 }
 
 .main-container {
 	width: 100vw;
-	background: rgba(15, 30, 10, 1);
+	background: white;
 }
 
 .main-container > * {
@@ -27,12 +36,12 @@ svg {
 }
 
 .paths path {
-	fill: white;
+	fill: yellowgreen;
 	transition: fill 0.5s;
 }
 
 .paths path:hover {
-	fill: black;
+	fill: rgba(0,0,0,0.2);
 	transition: fill 0.5s;
 }
 
@@ -77,14 +86,21 @@ svg {
 	flex-direction: row;
 	list-style-type: none;
 	gap: 50px;
+	box-shadow: black 1px 1px 10px;
 	z-index: 100000;
 }
 
 .Nav > a {
 	text-decoration: none;
 	color: black;
+	font-family: "Lexend", "serif";
 	font-size: 15px;
 	padding: 10px 25px 10px 25px;	
+}
+
+.Nav > a:hover {
+	color: green;
+	transition: color 0.3s;
 }
 
 #intro, #culture, #more {
@@ -100,6 +116,13 @@ svg {
 
 #intro {
 	justify-content: center;
+	background: url("./assets/bg-1.jpg");
+	background-size: cover;
+	text-shadow: 0px 5px 50px black;
+}
+
+#intro p {
+	color: white;
 }
 
 #culture > div {
@@ -116,10 +139,19 @@ svg {
 }
 
 .list > div {
-	background: rgba(255, 255, 255, 0.2);
-	height: 300px;
-	width: 200px;
-	align-content: center;	
+	height: 200px;
+	width: 125px;
+	align-content: center;
+	font-family: "Lexend", "serif";	
+	background-position: center;
+	background-color: black;
+	text-shadow: 0px 0px 10px black;
+	box-shadow: 0px 5px 5px black;
+}
+
+.list > div:hover {
+	transform: translateY(-15px);
+	transition: transform 0.2s;
 }
 
 .dropdown-menu {
@@ -133,32 +165,48 @@ svg {
 
 .dropdown-menu > .dropdown-button {
 	align-content: center;
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.4);
 	padding: 40px 0 40px 0;
 	min-height: 50px;
-	border: 2px rgba(0,0,0,0.9) solid;
+	border: 5px rgba(0,0,0,0.1) solid;
 	transition: background 0.5s;
 }
 
 .dropdown-menu > .dropdown-button:hover {
-	background: rgba(255, 255, 255, 0.05);
+	background: rgba(0,0,0, 0.5);
 	transition: background 0.5s;
 }
 
 
 .dropdown-content {
-	background: rgba(0, 0, 0, 0.5);
+	color: black;
+	background: rgba(0, 0, 0, 0.05);
 	padding: 40px 0 40px 0;
+	border: 1px solid black;
+}
+
+.dropdown-content > p {
+	color: black;
 }
 
 h1 {
+	font-family: "Lexend", serif;
 	font-size: 100px;
 	margin: 0 -200px 0 -200px;
 }
 h2 {
+	font-family: "Lexend", serif;
 	font-size: 38px;
+	font-weight: 1000;
+	color: black;
 }
+
 h3 {
+	font-style: italic;
+}
+
+h3, h4 {
+	font-family: "Lexend", serif;
 	font-size: 15px;
 }
 h5 {
@@ -168,6 +216,7 @@ h5 {
 	font-weight: 1000;
 }
 h6 {
+	color: black;
 	font-size: 30px;
 }
 p, li {
@@ -175,6 +224,7 @@ p, li {
 }
 p {
 	padding: 10px 0 10px 0;	
+	color: black;
 }
 
 @media only screen and (max-width: 900px){

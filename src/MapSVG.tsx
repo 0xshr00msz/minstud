@@ -4,7 +4,7 @@ export default function MapSVG({handleHover, leaveHover}){
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 3000" preserveAspectRatio="xMidYMid meet" onMouseLeave={leaveHover}>
             <g transform="translate(0.000000,3000.000000) scale(0.10000,-0.10000)">
                 <a className="paths"   id="Malitbog">
-                    <path onMouseEnter={handleHover}  d="M12323 29200 c-110 -55 -160 -111 -287 -323 -189 -319 -193 -329
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M12323 29200 c-110 -55 -160 -111 -287 -323 -189 -319 -193 -329
                     -207 -531 -15 -231 -36 -316 -117 -481 -89 -179 -122 -273 -129 -361 -10 -121
                     13 -147 199 -224 95 -39 128 -73 128 -134 0 -52 -30 -101 -80 -130 -28 -17
                     -50 -20 -117 -19 -75 2 -83 0 -83 -17 0 -44 163 -205 255 -252 22 -11 106 -86
@@ -19,7 +19,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     -471 62 -547 24z"/>
                 </a>
                 <a className="paths"   id="Manolo Fortich">
-                    <path onMouseEnter={handleHover}  d="M11410 27313 c-12 -16 -38 -53 -58 -83 -57 -85 -127 -125 -342 -199
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M11410 27313 c-12 -16 -38 -53 -58 -83 -57 -85 -127 -125 -342 -199
                     -311 -107 -440 -167 -543 -255 -122 -104 -117 -171 23 -295 34 -29 73 -72 87
                     -95 59 -92 92 -246 113 -526 6 -80 15 -175 21 -212 5 -37 13 -165 19 -285 16
                     -342 31 -420 98 -512 95 -131 102 -272 26 -530 -45 -153 -44 -166 11 -235 85
@@ -50,7 +50,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     -169 106 -6 0 -21 -12 -33 -27z"/>
                 </a>
                 <a className="paths"   id="Impasugong">
-                    <path onMouseEnter={handleHover}  d="M20345 26769 c-327 -28 -2667 -122 -2940 -117 -188 3 -260 -64 -366
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M20345 26769 c-327 -28 -2667 -122 -2940 -117 -188 3 -260 -64 -366
                     -343 -65 -170 -77 -194 -134 -257 -96 -107 -260 -215 -600 -397 -305 -162
                     -409 -238 -839 -609 -290 -251 -478 -410 -575 -486 -46 -35 -90 -74 -98 -87
                     -21 -32 -10 -53 29 -53 45 0 110 -34 173 -91 77 -71 95 -114 95 -225 0 -113
@@ -75,7 +75,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     103 -50 144 -9 87 -14 88 -291 90 -124 1 -270 -2 -325 -7z"/>
                 </a>
                 <a className="paths"   id="Baungon">
-                    <path onMouseEnter={handleHover}  d="M6549 25136 c-10 -21 -6 -39 24 -113 44 -108 67 -200 67 -271 0 -83
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M6549 25136 c-10 -21 -6 -39 24 -113 44 -108 67 -200 67 -271 0 -83
                     -8 -92 -89 -92 -49 0 -72 -4 -81 -15 -7 -9 -16 -52 -21 -98 -5 -54 -22 -122
                     -49 -201 -54 -153 -52 -184 15 -317 35 -70 46 -102 42 -120 -4 -16 -39 -51
                     -92 -93 -47 -37 -90 -79 -96 -94 -16 -42 -2 -118 42 -219 21 -51 39 -102 39
@@ -101,7 +101,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     -331 0 -387 7 -424 54 -27 35 -75 36 -90 2z"/>
                 </a>
                 <a className="paths"   id="Libona">
-                    <path onMouseEnter={handleHover}  d="M9880 25122 c-85 -1 -479 -6 -875 -11 -615 -8 -769 -13 -1054 -35
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M9880 25122 c-85 -1 -479 -6 -875 -11 -615 -8 -769 -13 -1054 -35
                     -254 -19 -339 -29 -358 -41 -39 -26 -116 -138 -219 -320 -53 -93 -119 -202
                     -146 -241 -76 -111 -69 -121 102 -167 162 -43 169 -48 219 -152 33 -70 44 -79
                     117 -95 90 -20 154 -83 154 -152 0 -43 66 -161 134 -240 130 -151 161 -222
@@ -121,7 +121,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     -186 6 c-308 10 -390 11 -552 8z"/>
                 </a>
                 <a className="paths"   id="Sumilao">
-                    <path onMouseEnter={handleHover}  d="M14536 24324 c-48 -47 14 -237 147 -448 28 -45 61 -105 75 -135 23
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M14536 24324 c-48 -47 14 -237 147 -448 28 -45 61 -105 75 -135 23
                     -51 24 -56 12 -127 -16 -92 -10 -163 30 -341 50 -221 43 -311 -27 -354 -31
                     -19 -44 -21 -121 -16 -48 3 -122 15 -165 26 -164 45 -255 102 -356 224 -81 97
                     -126 121 -288 153 -76 14 -138 32 -153 43 -139 102 -396 150 -497 92 -70 -40
@@ -141,7 +141,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     81 -35 181 -110 232 -36 24 -252 101 -283 101 -6 0 -19 -7 -27 -16z"/>
                 </a>
                 <a className="paths"   id="Malaybalay">
-                    <path onMouseEnter={handleHover}  d="M21590 23505 c-30 -8 -116 -23 -190 -35 -74 -12 -157 -28 -185 -37
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M21590 23505 c-30 -8 -116 -23 -190 -35 -74 -12 -157 -28 -185 -37
                     -86 -27 -448 -251 -719 -447 -226 -163 -241 -169 -489 -197 -354 -40 -390 -53
                     -647 -245 -85 -64 -218 -158 -295 -209 -252 -166 -280 -210 -425 -672 -48
                     -152 -97 -239 -159 -278 -22 -13 -98 -45 -168 -69 -112 -39 -353 -127 -623
@@ -172,7 +172,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     -203 25 -286 5z"/>
                 </a>
                 <a className="paths"   id="Talakag">
-                    <path onMouseEnter={handleHover}  d="M5675 21990 c-4 -6 7 -32 25 -58 40 -60 44 -78 37 -171 -5 -67 -50
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M5675 21990 c-4 -6 7 -32 25 -58 40 -60 44 -78 37 -171 -5 -67 -50
                     -381 -77 -531 -15 -81 -64 -177 -175 -340 -107 -157 -193 -324 -202 -388 -7
                     -56 9 -91 64 -137 l46 -38 -8 -61 c-14 -110 -8 -143 49 -266 57 -121 62 -138
                     71 -235 8 -77 10 -85 52 -179 29 -64 34 -87 31 -126 -3 -27 -13 -59 -24 -73
@@ -195,7 +195,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     -93 229 -165 270 -46 27 -61 30 -70 15z"/>
                 </a>
                 <a className="paths"   id="Cabanglasan">
-                    <path onMouseEnter={handleHover}  d="M21224 18761 c-50 -9 -78 -62 -89 -166 -4 -38 -16 -94 -27 -122 -24
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M21224 18761 c-50 -9 -78 -62 -89 -166 -4 -38 -16 -94 -27 -122 -24
                     -66 -105 -156 -169 -189 -27 -13 -54 -34 -60 -46 -17 -32 -5 -116 36 -248 53
                     -170 54 -190 9 -280 -53 -108 -56 -175 -15 -297 66 -198 132 -294 337 -488
                     154 -145 165 -164 187 -301 34 -209 153 -404 301 -490 72 -43 76 -47 76 -97 0
@@ -208,7 +208,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     90 40 114 0 45 -38 123 -86 176 l-36 40 -1357 2 c-747 2 -1366 1 -1377 -1z"/>
                 </a>
                 <a className="paths"   id="Lantapan">
-                    <path onMouseEnter={handleHover}  d="M12034 18334 c-19 -19 -34 -40 -34 -46 0 -29 -94 -199 -135 -243 -25
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M12034 18334 c-19 -19 -34 -40 -34 -46 0 -29 -94 -199 -135 -243 -25
                     -27 -58 -65 -72 -83 -15 -18 -44 -42 -65 -53 -66 -34 -110 -33 -293 4 -194 40
                     -283 52 -319 43 -23 -6 -26 -12 -26 -49 0 -75 -20 -157 -60 -241 -99 -210
                     -104 -340 -20 -468 38 -57 114 -117 483 -381 424 -304 494 -363 601 -504 26
@@ -228,7 +228,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     -57 15 -100 54 -64 61 -92 63 -139 13z"/>
                 </a>
                 <a className="paths"   id="Valencia">
-                    <path onMouseEnter={handleHover}  d="M12203 16022 c-79 -58 -193 -218 -335 -469 -40 -70 -138 -227 -219
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M12203 16022 c-79 -58 -193 -218 -335 -469 -40 -70 -138 -227 -219
                     -348 -139 -209 -656 -952 -685 -986 -25 -28 -17 -48 24 -56 60 -13 295 -6 622
                     18 210 16 396 23 595 23 362 1 375 -2 492 -107 201 -180 392 -265 777 -343
                     168 -34 204 -47 261 -99 69 -63 367 -260 915 -605 548 -345 783 -499 875 -574
@@ -257,7 +257,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     235 -305 249 -48 5 -57 3 -95 -24z"/>
                 </a>
                 <a className="paths"   id="San Fernando">
-                    <path onMouseEnter={handleHover}  d="M23815 15239 c-198 -15 -461 -38 -584 -49 -223 -21 -226 -21 -355
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M23815 15239 c-198 -15 -461 -38 -584 -49 -223 -21 -226 -21 -355
                     -70 -141 -53 -939 -369 -944 -375 -2 -1 -79 -304 -172 -671 -199 -786 -186
                     -693 -195 -1394 -5 -462 -6 -487 -47 -900 l-42 -424 33 -166 c18 -91 94 -406
                     168 -700 74 -294 171 -679 215 -855 43 -176 156 -590 249 -920 364 -1283 424
@@ -277,7 +277,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     29 -69 31 -30 0 -217 -12 -415 -28z"/>
                 </a>
                 <a className="paths"   id="Pangantucan">
-                    <path onMouseEnter={handleHover}  d="M11425 14089 c-44 -5 -109 -6 -145 -3 -150 13 -560 -48 -1119 -166
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M11425 14089 c-44 -5 -109 -6 -145 -3 -150 13 -560 -48 -1119 -166
                     -556 -118 -694 -138 -1139 -165 -134 -8 -254 -18 -267 -21 -16 -4 -35 -25 -55
                     -61 -64 -113 -184 -202 -443 -328 -163 -80 -240 -137 -253 -189 -23 -92 79
                     -171 286 -222 117 -28 222 -77 350 -162 242 -161 532 -438 597 -569 21 -45 25
@@ -301,7 +301,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     -31 115 -42 122 -19 15 -122 15 -248 2z"/>
                 </a>
                 <a className="paths"   id="Maramag">
-                    <path onMouseEnter={handleHover}  d="M11841 14072 c-11 -8 -13 -28 -8 -89 6 -88 43 -210 142 -474 36 -95
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M11841 14072 c-11 -8 -13 -28 -8 -89 6 -88 43 -210 142 -474 36 -95
                     77 -216 90 -269 24 -94 122 -389 250 -755 64 -184 92 -280 176 -600 89 -342
                     116 -558 85 -690 -35 -150 -140 -318 -319 -510 -217 -232 -230 -283 -95 -372
                     75 -49 109 -89 147 -170 27 -59 38 -62 181 -63 124 -1 166 -12 208 -53 44 -43
@@ -319,7 +319,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     76 -311 4 c-191 3 -316 1 -325 -5z"/>
                 </a>
                 <a className="paths"   id="Kalilangan">
-                    <path onMouseEnter={handleHover}  d="M8230 13659 c-363 -35 -598 -51 -823 -54 -255 -5 -298 -12 -405 -71
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M8230 13659 c-363 -35 -598 -51 -823 -54 -255 -5 -298 -12 -405 -71
                     -79 -44 -157 -109 -302 -251 -163 -158 -220 -178 -427 -153 l-106 13 -24 -29
                     c-48 -61 -38 -125 29 -176 19 -14 108 -62 199 -107 296 -144 355 -233 283
                     -432 -31 -85 -29 -149 5 -197 12 -17 59 -58 105 -91 46 -34 86 -68 90 -76 3
@@ -341,7 +341,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     189 82 29 166 65 186 80 73 56 69 107 -9 105 -22 -1 -124 -10 -226 -20z"/>
                 </a>
                 <a className="paths"   id="Quezon">
-                    <path onMouseEnter={handleHover}  d="M17935 11428 c-11 -6 -74 -63 -140 -127 -67 -64 -187 -178 -267 -253
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M17935 11428 c-11 -6 -74 -63 -140 -127 -67 -64 -187 -178 -267 -253
                     -80 -76 -171 -170 -201 -210 -94 -124 -137 -154 -206 -142 -20 4 -165 58 -322
                     120 -303 121 -395 150 -437 139 -58 -14 -63 -36 -32 -125 14 -39 19 -82 20
                     -152 l0 -97 -104 -109 c-124 -130 -131 -146 -123 -286 7 -118 37 -238 102
@@ -364,7 +364,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     -32 54 -70 95 -89 95 -9 0 -25 -6 -36 -12z"/>
                 </a>
                 <a className="paths"   id="Don Carlos">
-                    <path onMouseEnter={handleHover}  d="M12783 9713 c-23 -15 -88 -84 -145 -153 -83 -99 -131 -146 -231 -223
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M12783 9713 c-23 -15 -88 -84 -145 -153 -83 -99 -131 -146 -231 -223
                     -189 -147 -200 -164 -212 -322 -11 -163 -32 -190 -191 -244 -135 -46 -159 -66
                     -174 -138 -7 -32 -21 -88 -31 -124 -34 -121 -110 -160 -308 -160 -69 1 -120
                     -4 -128 -10 -32 -27 -9 -88 68 -180 22 -25 259 -392 528 -815 l488 -769 794
@@ -381,7 +381,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     87 -245 132 -323 138 -53 3 -65 0 -102 -25z"/>
                 </a>
                 <a className="paths"   id="Kitaotao" >
-                    <path onMouseEnter={handleHover}  d="M14110 7901 c-5 -11 -10 -64 -10 -118 0 -102 -13 -227 -55 -548 -29
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M14110 7901 c-5 -11 -10 -64 -10 -118 0 -102 -13 -227 -55 -548 -29
                     -219 -32 -372 -10 -414 8 -16 35 -47 60 -69 78 -68 122 -64 207 19 66 65 100
                     77 165 60 51 -14 107 -55 180 -132 95 -100 168 -130 348 -144 l90 -6 140 -85
                     c248 -149 344 -183 797 -278 598 -126 856 -209 978 -313 70 -60 71 -67 79
@@ -399,7 +399,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     202 -229 340 -277 340 -7 0 -17 -9 -23 -19z"/>
                 </a>
                 <a className="paths"   id="Dangcagan">
-                    <path onMouseEnter={handleHover}  d="M14354 6649 c-33 -9 -124 -84 -124 -101 0 -6 22 -44 50 -85 71 -106
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M14354 6649 c-33 -9 -124 -84 -124 -101 0 -6 22 -44 50 -85 71 -106
                     89 -174 100 -373 10 -182 16 -199 81 -233 30 -16 51 -17 189 -12 185 8 198 5
                     285 -79 33 -32 116 -96 185 -143 193 -133 258 -184 355 -280 50 -48 108 -97
                     130 -107 22 -11 85 -25 140 -31 114 -13 120 -15 236 -101 47 -35 112 -75 145
@@ -411,7 +411,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     -201 89z"/>
                 </a>
                 <a className="paths"   id="Kadingilan">
-                    <path onMouseEnter={handleHover}  d="M12426 6354 c-7 -137 2 -247 29 -383 22 -106 17 -177 -25 -351 -38
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M12426 6354 c-7 -137 2 -247 29 -383 22 -106 17 -177 -25 -351 -38
                     -154 -36 -174 22 -256 91 -130 93 -145 34 -384 -20 -79 -36 -157 -36 -173 0
                     -17 -17 -52 -43 -90 -53 -76 -64 -103 -76 -190 -11 -75 -32 -120 -72 -150 -56
                     -41 -138 12 -211 137 -59 101 -77 116 -136 116 -85 0 -138 23 -207 89 -65 63
@@ -429,7 +429,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     330 12 211 -55 299 -248 325 -121 16 -490 29 -1045 36 l-521 7 -7 -129z"/>
                 </a>
                 <a className="paths"   id="Kibawe">
-                    <path onMouseEnter={handleHover}  d="M14286 5767 c-18 -19 -52 -84 -81 -152 -83 -199 -127 -253 -281 -343
+                    <path onMouseEnter={handleHover} onClick={handleHover}  d="M14286 5767 c-18 -19 -52 -84 -81 -152 -83 -199 -127 -253 -281 -343
                     -81 -47 -109 -76 -156 -163 -51 -97 -110 -154 -264 -255 -150 -98 -207 -153
                     -226 -217 -17 -57 -1 -103 86 -249 96 -161 149 -268 183 -365 23 -69 26 -92
                     25 -200 -2 -141 5 -150 60 -81 18 23 70 85 115 136 63 72 86 106 97 146 12 39
@@ -445,7 +445,7 @@ export default function MapSVG({handleHover, leaveHover}){
                     155 -412 225 -120 36 -170 56 -220 89 -117 78 -120 79 -164 33z"/>
                 </a>
                 <a className="paths"   id="Damulog">
-                    <path onMouseEnter={handleHover} id="Damulog" d="M13975 3954 c-41 -21 -58 -38 -106 -103 -23 -31 -60 -70 -84 -88 -46
+                    <path onMouseEnter={handleHover} onClick={handleHover} id="Damulog" d="M13975 3954 c-41 -21 -58 -38 -106 -103 -23 -31 -60 -70 -84 -88 -46
                     -35 -55 -58 -55 -151 0 -50 -3 -58 -36 -88 -19 -19 -39 -34 -44 -34 -13 0 -36
                     -48 -71 -148 -37 -106 -103 -215 -164 -271 -60 -55 -189 -139 -360 -234 -213
                     -118 -199 -100 -206 -254 -6 -144 -19 -181 -84 -243 -46 -44 -53 -57 -65 -122
