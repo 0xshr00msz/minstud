@@ -16,13 +16,12 @@ function App() {
 	<>
 	  {loading && <Loading/>}
 	  <NavBar/>
-	  {!loading &&
-	  <div className='main-container'>   
+	  <div className={`main-container ${loading ? 'loading' : ''}`}>
 	    <Intro/>
 	    <Culture/>
             <MapSection/>
 	    <More/>
-	  </div>}
+	  </div>
   	</>
     )
 }

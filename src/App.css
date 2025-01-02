@@ -8,16 +8,30 @@
 #tigwahanon { background: url("./assets/Tigwahanon.jpg"); }
 #umayamnon { background: url("./assets/Umayamnon.jpg"); }
 
+@keyframes loading {
+	from {transform: translateY(0)}
+	to {transform: translateY(-1000px)}
+}	
+
 .loading-screen {
 	position: absolute;
 	height: 100vh;
 	width: 100vw;
+	opacity: 100%;
 	background: black;
 	color: white;
 	text-align: center;
 	align-content: center;
 	z-index: 10;
-	overflow-x: hidden;
+	overflow: hidden;
+	animation-name: loading;
+	animation-duration: 1.2s;
+	animation-delay: 1s;
+}
+
+.loading {
+	height: 100vh;
+	overflow: hidden;
 }
 
 html {
