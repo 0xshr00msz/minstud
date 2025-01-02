@@ -8,6 +8,18 @@
 #tigwahanon { background: url("./assets/Tigwahanon.jpg"); }
 #umayamnon { background: url("./assets/Umayamnon.jpg"); }
 
+.loading-screen {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background: black;
+	color: white;
+	text-align: center;
+	align-content: center;
+	z-index: 10;
+	overflow-x: hidden;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -87,7 +99,7 @@ svg {
 	list-style-type: none;
 	gap: 50px;
 	box-shadow: black 1px 1px 10px;
-	z-index: 100000;
+	z-index: 2;
 }
 
 .Nav > a {
