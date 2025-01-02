@@ -48,7 +48,7 @@ export default function Culture() {
 	    <div className='tribe-content'
         	dangerouslySetInnerHTML={{ __html: activeTribeContent || "<p>Select a tribe to see details.</p>" }}
       	    ></div>
-          </div> : <p>Select a tribe to see details.</p>} 
+          </div> : <h3 style ={{color: "black"}}>Select a tribe to see details.</h3>} 
       </div>
       <h5>...</h5>
       <div>
