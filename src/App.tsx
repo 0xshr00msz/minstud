@@ -10,7 +10,7 @@ import Loading from './Loading.tsx'
 function App() {
 	const [loading, setLoading] = useState<Boolean>(true);
 	useEffect(() => {
-		setTimeout(() => setLoading(false), 200000)
+		setTimeout(() => setLoading(false), 4000)
 	}, [])
   return (
 	<>

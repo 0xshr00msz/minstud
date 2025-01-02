@@ -13,6 +13,8 @@
 	to {transform: translateY(-1000px)}
 }	
 
+
+
 .loading-screen {
 	position: absolute;
 	height: 100vh;
@@ -27,7 +29,7 @@
 	overflow: hidden;
 	animation-name: loading;
 	animation-duration: 1.2s;
-	animation-delay: 1s;
+	animation-delay: 3s;
 }
 
 .loading-screen * {
@@ -75,6 +77,7 @@ html {
 .main-container {
 	width: 100vw;
 	background: white;
+	overflow-x: hidden;
 }
 
 .main-container > * {
@@ -133,9 +136,11 @@ svg {
 
 .Nav {
 	width: 100vw;
+	height: 6vh;
 	background: rgba(255, 255, 255, 1);
 	position: fixed;
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	flex-direction: row;
 	list-style-type: none;
