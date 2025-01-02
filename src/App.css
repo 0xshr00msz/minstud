@@ -64,6 +64,24 @@
 	overflow: hidden;
 }
 
+.player {
+  	position: fixed;
+ 	bottom: 0;
+  	right: 0;
+  	padding: 15px;
+  	background-color: rgba(0, 0, 0, 0.8);
+  	color: white;
+  	font-size: 16px;
+  	border-top-left-radius: 20px;   
+  	cursor: pointer;
+}
+
+.player p {
+	text-align: center;
+	color: white;
+}
+
+
 html {
 	scroll-behavior: smooth;
 }
@@ -245,12 +263,17 @@ svg {
 .dropdown-content {
 	color: black;
 	background: rgba(0, 0, 0, 0.05);
-	padding: 40px 0 40px 0;
+	padding: 40px 20vw 40px 20vw;
 	border: 1px solid black;
 }
 
 .dropdown-content > p {
 	color: black;
+}
+
+.dropdown-content ul {
+	padding: 10px 0 0 0;
+	list-style: none;
 }
 
 h1 {

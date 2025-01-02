@@ -6,6 +6,7 @@ import Culture from './Culture.tsx'
 import MapSection from './MapSection.tsx'
 import More from './More.tsx'
 import Loading from './Loading.tsx'
+import Player from './Player.tsx'
 
 function App() {
 	const [loading, setLoading] = useState<Boolean>(true);
@@ -16,6 +17,7 @@ function App() {
 	<>
 	  {loading && <Loading/>}
 	  <NavBar/>
+	  <Player/>
 	  <div className={`main-container ${loading ? 'loading' : ''}`}>
 	    <Intro/>
 	    <Culture/>
