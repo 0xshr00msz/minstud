@@ -13,7 +13,6 @@ export default function Player() {
   useEffect(() => {
     if (sound) {
       play();
-      sound.mute(true);
     }
   }, [play, sound]);
 

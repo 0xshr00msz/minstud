@@ -116,6 +116,7 @@ svg {
 }
 
 .paths path:hover {
+	cursor: pointer;
 	fill: rgba(0,0,0,0.2);
 	transition: fill 0.5s;
 }
@@ -211,13 +212,14 @@ svg {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 20px;
-	padding: 20px 0 20px 0;
+	padding: 0 0 20px 0;
 	margin: 0 -15vw 0 -15vw;
 }
 
 .list > div {
 	height: 200px;
 	width: 125px;
+	margin: 20px 0 0 0;
 	align-content: center;
 	font-family: "Lexend", "serif";	
 	background-position: center;
@@ -225,6 +227,7 @@ svg {
 	text-shadow: 0px 0px 10px black;
 	box-shadow: 0px 5px 5px black;
 	transition: transform 0.2s;
+	cursor: pointer;
 }
 
 .list > div:hover, .clicked {
@@ -247,16 +250,29 @@ svg {
 
 .dropdown-menu > .dropdown-button {
 	align-content: center;
-	background: rgba(0,0,0,0.4);
-	padding: 40px 0 40px 0;
-	min-height: 50px;
+	padding: 30px 0 30px 0;
+	min-height: 20px;
 	border: 5px rgba(0,0,0,0.1) solid;
-	transition: background 0.5s;
+	transition: transform 0.5s;
+	cursor: pointer;
 }
 
-.dropdown-menu > .dropdown-button:hover {
-	background: rgba(0,0,0, 0.5);
-	transition: background 0.5s;
+.dropdown-button:hover, .dropdown-clicked {
+	transform: translateX(10vw);
+	transition: transform 0.5s;
+}
+
+.dropdown-button:nth-child(1), .dropdown-button:nth-child(5) {
+	background: rgba(255, 0, 0, 1);
+}
+
+.dropdown-button:nth-child(2), .dropdown-button:nth-child(4) {
+	background: rgba(255,255,0, 1);
+	color: black;
+}
+
+.dropdown-button:nth-child(3) {
+	background: rgba(0,0,0, 1);
 }
 
 

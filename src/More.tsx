@@ -12,7 +12,7 @@ export default function More() {
       <h2>Learn More About Bukidnon</h2>
       <div className="dropdown-menu">
         {/* Natural Wonders and Cultural Treasures */}
-        <div className="dropdown-button" onClick={() => handleOnClick(0)}>
+        <div className={`dropdown-button ${activeIndex === 0 ? 'dropdown-clicked' : ''}`} onClick={() => handleOnClick(0)}>
           <h4>Natural Wonders and Cultural Treasures</h4>
         </div>
         {activeIndex === 0 && (
@@ -30,7 +30,7 @@ export default function More() {
         )}
 
         {/* Challenges and Socioeconomic Issues */}
-        <div className="dropdown-button" onClick={() => handleOnClick(1)}>
+        <div className={`dropdown-button ${activeIndex === 1 ? 'dropdown-clicked' : ''}`} onClick={() => handleOnClick(1)}>
           <h4>Challenges and Socioeconomic Issues</h4>
         </div>
         {activeIndex === 1 && (
@@ -74,7 +74,7 @@ export default function More() {
         )}
 
         {/* Cultural Practices: Conflict Resolution */}
-        <div className="dropdown-button" onClick={() => handleOnClick(2)}>
+        <div className={`dropdown-button ${activeIndex === 2 ? 'dropdown-clicked' : ''}`} onClick={() => handleOnClick(2)}>
           <h4>Cultural Practices: Conflict Resolution</h4>
         </div>
         {activeIndex === 2 && (
@@ -96,7 +96,7 @@ export default function More() {
         )}
 
         {/* Activism and Social Movements */}
-        <div className="dropdown-button" onClick={() => handleOnClick(3)}>
+        <div className={`dropdown-button ${activeIndex === 3 ? 'dropdown-clicked' : ''}`} onClick={() => handleOnClick(3)}>
           <h4>Activism and Social Movements</h4>
         </div>
         {activeIndex === 3 && (
@@ -140,7 +140,7 @@ export default function More() {
         )}
 
         {/* References and Further Reading */}
-        <div className="dropdown-button" onClick={() => handleOnClick(4)}>
+        <div className={`dropdown-button ${activeIndex === 4 ? 'dropdown-clicked' : ''}`} onClick={() => handleOnClick(4)}>
           <h4>References and Further Reading</h4>
         </div>
         {activeIndex === 4 && (
