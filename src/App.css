@@ -208,9 +208,13 @@ svg {
 	box-shadow: 0px 5px 5px black;
 }
 
-.list > div:hover {
+.list > div:hover, .clicked {
 	transform: translateY(-15px);
 	transition: transform 0.2s;
+}
+
+.tribe-content {
+	color: black;
 }
 
 .dropdown-menu {
