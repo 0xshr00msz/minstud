@@ -19,6 +19,7 @@ function App() {
 	  <NavBar/>
 	  <Player/>
 	  <div className={`main-container ${loading ? 'loading' : ''}`}>
+	    <div className='main-container-wrapper'/>
 	    <Intro/>
 	    <Culture/>
             <MapSection/>

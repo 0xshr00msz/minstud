@@ -1,4 +1,8 @@
 import { useState } from 'react';
+import Pagebreak from './Pagebreak.tsx'
+import kaamulan from './assets/kaamulan.jpg'
+import history from './assets/history.jpg'
+import beliefs from './assets/beliefs.jpg'
 
 export default function Culture() {
   const [activeTribe, setActiveTribe] = useState<string | null>(null);
@@ -28,12 +32,14 @@ export default function Culture() {
   return (
     <div id="culture">
       <div>
+        <Pagebreak/>
         <h2>The People and Tribes of Bukidnon</h2>
         <p>
           For centuries, the Bukidnon people, also called "Buquidnons," have lived along the northern Pulangi River and the Tagoloan and Cagayan Rivers. These are proud and resilient forest dwellers, bound by their heritage and deep connection to the land.
         </p>
+        <img src={kaamulan}/>
         <p>The province is home to <b>seven indigenous tribes</b>:</p>
-        <div className="list">
+        <div className="list" id="tribes">
           <div id="bukidnon" onClick={showContent} className={activeTribe === 'bukidnon' ? 'clicked' : ''}>Bukidnon</div>
           <div id="higaonon" onClick={showContent}  className={activeTribe === 'higaonon' ? 'clicked' : ''}>Higaonon</div>
           <div id="manobo" onClick={showContent}  className={activeTribe === 'manobo' ? 'clicked' : ''}>Manobo</div>
@@ -50,7 +56,7 @@ export default function Culture() {
       	    ></div>
           </div> : <h3 style ={{color: "black"}}>Select a tribe to see details.</h3>} 
       </div>
-      <h5>...</h5>
+      <Pagebreak/>
       <div>
         <h2>A Glimpse into Bukidnon's History</h2>
         <p>
@@ -60,14 +66,15 @@ export default function Culture() {
         <p>
           The Spanish arrived in the 1860s, bringing Jesuit missionaries who established the first parish in Sumilao in 1880. By the early 1900s, many Bukidnons had converted to Christianity while retaining elements of their animist beliefs. This blend of old and new shaped Bukidnon's spiritual identity.
         </p>
+	<img src={history} />
       </div>
-      <h5>...</h5>
+      <Pagebreak/>
       <div>
         <h2>Beliefs of the Bukidnon Tribes</h2>
         <p>
           Central to Bukidnon's identity is its connection to nature and spirituality. The tribes believe in four gods, each representing a direction:
         </p>
-        <div className="list">
+        <div className="list" id="beliefs">
           <div>Domalongdong (North)</div>
           <div>Ongli (South)</div>
           <div>Tagolambong (East)</div>
@@ -76,8 +83,8 @@ export default function Culture() {
         <p>
           These deities guide and protect their people, symbolizing the harmony between the tribes and the natural world.
         </p>
+	<img src={beliefs}/>
       </div>
-      <h5>...</h5>
     </div>
   );
 }

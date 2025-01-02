@@ -74,6 +74,7 @@
   	font-size: 16px;
   	border-top-left-radius: 20px;   
   	cursor: pointer;
+	z-index: 2;
 }
 
 .player p {
@@ -103,6 +104,21 @@ html {
 	min-height: 100vh;
 }
 
+.main-container-wrapper {
+	position: fixed;
+	height: 100vh;
+	width: 80vw;
+	justify-self: center;
+	align-self: center;
+	border-left: 10vw rgba(0,0,0,0.0) solid;
+	border-right: 10vw rgba(0,0,0,0.0) solid;
+}
+
+#intro {
+	position: relative;
+	z-index: 1;
+}
+
 svg {
 	transform: scale(135%);
 	max-height: 70%;
@@ -111,13 +127,22 @@ svg {
 }
 
 .paths path {
-	fill: yellowgreen;
 	transition: fill 0.5s;
+}
+
+.paths:nth-child(3n-2) {
+	fill: red;
+}
+.paths:nth-child(3n-1) {
+	fill: yellow;
+}
+.paths:nth-child(3n) {
+	fill: rgba(30,30,30,1);
 }
 
 .paths path:hover {
 	cursor: pointer;
-	fill: rgba(0,0,0,0.2);
+	fill: rgba(255,255,255,1);
 	transition: fill 0.5s;
 }
 
@@ -125,7 +150,11 @@ svg {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 50px;
+	background: black;
+}
+
+#map *{
+	color: white;
 }
 
 .sub-container {
@@ -151,29 +180,65 @@ svg {
 	width: 30vw;
 }
 
+.page-break {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	gap: 20px;
+	padding: 60px 0 20px 0;
+}
 
+.page-break-outer {
+	height: 10px;
+	width: 6vw;
+	background: red;
+}
+
+.page-break-inner {
+	height: 10px;
+	width: 6vw;
+	background: yellow;
+}
+
+.page-break-center {
+	height: 10px;
+	width: 10vw;
+	background: black;
+}
+
+#map .page-break-center {
+	background: white;
+}
 
 .Nav {
 	width: 100vw;
-	height: 6vh;
-	background: rgba(255, 255, 255, 1);
+	height: 8vh;
+	background: rgba(0,0,0, 1);
 	position: fixed;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	flex-direction: row;
 	list-style-type: none;
-	gap: 50px;
-	box-shadow: black 1px 1px 10px;
+	gap: 25px;
 	z-index: 2;
+	justify-content: center;
 }
 
 .Nav > a {
 	text-decoration: none;
-	color: black;
+	align-content: right;
+	color: white;
 	font-family: "Lexend", "serif";
 	font-size: 15px;
 	padding: 10px 25px 10px 25px;	
+}
+
+.Nav a:nth-child(2n):hover {
+	color: red;
+}
+.Nav a:nth-child(2n-1):hover {
+	color: yellow;
 }
 
 .Nav > a:hover {
@@ -185,11 +250,19 @@ svg {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	padding: 50px 30vw 0 30vw;
+	padding: 0px 30vw 0 30vw;
+	position: relative;
 }
 
 #more {
 	min-height: 85vh;
+	z-index: 1;
+	background: white;
+	padding-top: 30px;
+}
+
+#culture {
+	padding-bottom: 30px;
 }
 
 #intro {
@@ -197,14 +270,11 @@ svg {
 	background: url("./assets/bg-1.jpg");
 	background-size: cover;
 	text-shadow: 0px 5px 50px black;
+	z-index: 1;
 }
 
 #intro p {
 	color: white;
-}
-
-#culture > div {
-	padding: 50px 0 50px 0;
 }
 
 .list {
@@ -237,6 +307,10 @@ svg {
 
 .tribe-content {
 	color: black;
+}
+
+#beliefs > div {
+	width: 200px;
 }
 
 .dropdown-menu {
@@ -292,6 +366,10 @@ svg {
 	list-style: none;
 }
 
+.dropdown-content a:link, .dropdown-content a:visited {
+	color: red;
+}
+
 h1 {
 	font-family: "Lexend", serif;
 	font-size: 100px;
@@ -323,14 +401,23 @@ h6 {
 	font-size: 30px;
 }
 p, li {
-	font-size: 15px;
+	font-size: 16px;
 }
 p {
 	padding: 10px 0 10px 0;	
 	color: black;
 }
 
+img {
+	width: 40vw;
+	border: 1px solid black;
+}
+
 @media only screen and (max-width: 900px){
+	.main-container-wrapper {
+		border: 0;
+	}
+
 	#intro, #culture, #more {
 		display: flex;
 		flex-direction: column;
@@ -370,6 +457,9 @@ p {
 	}
 	.sub-container > div {
 		width: 70vw;
+	}
+	img {
+		width: 60vw;
 	}
 }
 

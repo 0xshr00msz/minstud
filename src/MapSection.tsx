@@ -1,5 +1,6 @@
 import MapSVG from './MapSVG.tsx'
 import { useState } from 'react'
+import Pagebreak from './Pagebreak.tsx'
 
 export default function MapSection(){
 	const [municipality, setMunicipality] = useState<string | null>(null);
@@ -15,6 +16,7 @@ export default function MapSection(){
 
 	return (
 		<div id='map'>
+		  <Pagebreak/>
 		  <h2>Bukidnon Today</h2>
 		  <p>The province now composes of 21 Municipalities</p>
     		  <div className='sub-container'>
