@@ -14,6 +14,7 @@ export default function More() {
   return (
     <div id="more">
       <h2>Learn More About Bukidnon</h2>
+      <p>(Click to show more)</p>
       <div className="dropdown-menu">
         {/* Natural Wonders and Cultural Treasures */}
         <div

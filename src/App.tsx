@@ -7,6 +7,7 @@ import MapSection from './MapSection.tsx';
 import More from './More.tsx';
 import Loading from './Loading.tsx';
 import Player from './Player.tsx';
+import Gallery from './Gallery.tsx';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -34,6 +35,7 @@ function App() {
         <Culture />
         <MapSection />
         <More />
+	<Gallery />
       </div>
     </>
   );

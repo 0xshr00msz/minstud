@@ -100,14 +100,18 @@ html {
 }
 
 .main-container {
+	display: flex;
+	flex-direction: column;
 	width: 100vw;
 	background: white;
 	overflow-x: hidden;
+	align-items: center;
 }
 
 .main-container > * {
 	display: flex;
 	min-height: 100vh;
+	padding-top: 10vh;
 }
 
 .main-container-wrapper {
@@ -157,7 +161,7 @@ svg {
 	justify-content: center;
 	align-items: center;
 	background: black;
-	padding-top: 70px;
+	padding-top: 10vh;
 }
 
 #map h2, #map p, #map h6{
@@ -267,7 +271,7 @@ svg {
 	min-height: 85vh;
 	z-index: 1;
 	background: white;
-	padding-top: 60px;
+	padding-top: 10vh !important;
 }
 
 #culture {
@@ -393,6 +397,29 @@ svg {
 
 .dropdown-content a:link, .dropdown-content a:visited {
 	color: red;
+}
+
+#gallery {
+	text-align: center;
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 80vw;
+	overflow: hidden;
+	gap: 20px;
+	min-height: 0;
+}
+
+#gallery > img {
+	padding: 20px;
+	max-height: auto;
+	max-width: 80vw;
+}
+
+#gallery > p {
+	margin-top: -20px;
+	font-size: 16px;
 }
 
 h1 {
