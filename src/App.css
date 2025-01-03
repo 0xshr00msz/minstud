@@ -8,12 +8,17 @@
 #tigwahanon { background: url("./assets/Tigwahanon.jpg"); }
 #umayamnon { background: url("./assets/Umayamnon.jpg"); }
 
-@keyframes loading {
-	from {transform: translateY(0)}
-	to {transform: translateY(-1000px)}
-}	
+@keyframes fadeOut {
+	0% {transform: translateY(0)}
+	60% {transform: translateY(-300px)}
+	100% {transform: translateY(-1000px)}
+}
 
-
+.fade-out {
+	animation-name: fadeOut;
+	animation-duration: 2.7s;
+	animation-timing-function: ease-in-out;
+}
 
 .loading-screen {
 	position: absolute;
@@ -27,14 +32,15 @@
 	justify-content: center;
 	z-index: 10;
 	overflow: hidden;
-	animation-name: loading;
-	animation-duration: 1.2s;
-	animation-delay: 3s;
 }
 
 .loading-screen * {
 	color: white;
 	list-style: none;
+}
+
+.loading-screen p{
+	padding: 2vh 2vw 0 2vw;
 }
 
 .members {
@@ -151,10 +157,11 @@ svg {
 	justify-content: center;
 	align-items: center;
 	background: black;
+	padding-top: 70px;
 }
 
-#map *{
-	color: white;
+#map h2, #map p, #map h6{
+	color: white;	
 }
 
 .sub-container {
@@ -169,8 +176,10 @@ svg {
 	align-content: center;
 }
 
-#map > p {
+#map p {
 	padding-bottom: 30px;
+	margin: 0 5vw 0 5vw;
+	text-align: center;
 }
 
 .sub-container-left {
@@ -258,11 +267,11 @@ svg {
 	min-height: 85vh;
 	z-index: 1;
 	background: white;
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 #culture {
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 }
 
 #intro {
@@ -309,7 +318,12 @@ svg {
 	color: black;
 }
 
+#tribes{
+	-webkit-text-stroke: 1px white;
+}
+
 #beliefs > div {
+	height: 50px;
 	width: 200px;
 }
 
@@ -332,29 +346,36 @@ svg {
 }
 
 .dropdown-button:hover, .dropdown-clicked {
-	transform: translateX(10vw);
+	transform: translateX(2vw);
 	transition: transform 0.5s;
 }
 
-.dropdown-button:nth-child(1), .dropdown-button:nth-child(5) {
+#one, #five {
 	background: rgba(255, 0, 0, 1);
 }
 
-.dropdown-button:nth-child(2), .dropdown-button:nth-child(4) {
+#two, #four {
 	background: rgba(255,255,0, 1);
 	color: black;
 }
 
-.dropdown-button:nth-child(3) {
+#three {
 	background: rgba(0,0,0, 1);
 }
 
+@keyframes dropdown {
+	from {max-height: 1vh; padding: 0 20vw 0 20vw}
+	to {max-height: 100vh; padding: 40px 20vw 40px 20vw }
+}
 
 .dropdown-content {
+	max-height: 100vh;
+	overflow: hidden;
 	color: black;
 	background: rgba(0, 0, 0, 0.05);
 	padding: 40px 20vw 40px 20vw;
-	border: 1px solid black;
+	animation-name: dropdown;
+	animation-duration: 1s;
 }
 
 .dropdown-content > p {
@@ -410,7 +431,7 @@ p {
 
 img {
 	width: 40vw;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 @media only screen and (max-width: 900px){
@@ -423,6 +444,10 @@ img {
 		flex-direction: column;
 		text-align: center;
 		padding: 50px 20vw 0 20vw;
+	}
+
+	#culture {
+		padding-bottom: 60px;
 	}
 	
 	.Nav {
@@ -473,7 +498,16 @@ img {
 	.sub-container > div {
 		width: 100vw;
 	}
+	.members {
+		padding: 0;
+		text-align: center;
+		justify-items: center;
+	}
 	.members * {
 		font-size: 11px;
+		justify-content: center;
+	}
+	#culture {
+		padding-bottom: 60px;
 	}
 }

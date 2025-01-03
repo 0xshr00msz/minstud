@@ -1,20 +1,39 @@
-export default function Loading(){
-		return (
-			<div className='loading-screen'>
-				<h2>Loading...</h2>
-				<h3>Minstud Final Project</h3>
-				<p>Note: Music will play once you click anything, you can mute on the bottom right</p>
-				<div className='members'>
-					<p>Presented by:</p>
-					<ol>
-						<li>Guillen</li>
-						<li>Magpusao</li>
-						<li>Mante</li>
-						<li>Manalo</li>
-						<li>Veloso</li>
-						<li>Veras</li>
-					</ol>
-				</div>
-			</div>
-	)
+import { useState, useEffect } from 'react';
+import './App.css';
+
+export default function Loading() {
+  const [fadeOut, setFadeOut] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleUserClick = () => {
+      setFadeOut(true);
+      window.removeEventListener('click', handleUserClick);
+    };
+
+    window.addEventListener('click', handleUserClick);
+
+    return () => {
+      window.removeEventListener('click', handleUserClick);
+    };
+  }, []);
+
+  return (
+    <div className={`loading-screen ${fadeOut ? 'fade-out' : ''}`}>
+      <h2>Minstud Final Project</h2>
+      <h3>Click Anywhere to Continue...</h3>
+      <p>Disclaimer: We do not own any of the pictures and audio used</p>
+      <div className='members'>
+        <p>Presented by:</p>
+        <ol>
+          <li>Guillen</li>
+          <li>Magpusao</li>
+          <li>Mante</li>
+          <li>Manalo</li>
+          <li>Veloso</li>
+          <li>Veras</li>
+        </ol>
+      </div>
+    </div>
+  );
 }
+

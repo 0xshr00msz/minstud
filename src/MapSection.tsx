@@ -1,6 +1,6 @@
 import MapSVG from './MapSVG.tsx'
 import { useState } from 'react'
-import Pagebreak from './Pagebreak.tsx'
+import Graph from './Graph.tsx'
 
 export default function MapSection(){
 	const [municipality, setMunicipality] = useState<string | null>(null);
@@ -16,9 +16,8 @@ export default function MapSection(){
 
 	return (
 		<div id='map'>
-		  <Pagebreak/>
 		  <h2>Bukidnon Today</h2>
-		  <p>The province now composes of 21 Municipalities</p>
+		  <p>(The province now composes of 20 Municipalities and 2 Cities)</p>
     		  <div className='sub-container'>
 		    <div className='sub-container-left'>
 		      {municipality ? <h2>{municipality}</h2> : <h6>(Hover over Map)</h6>}
@@ -27,6 +26,7 @@ export default function MapSection(){
 		      <MapSVG handleHover={getMunicipality} leaveHover={noMunicipality}/>
 	            </div>
 		  </div>
+		  <Graph/>
                   <h5>...</h5>
 		</div>
 	)

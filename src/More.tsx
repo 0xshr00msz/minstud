@@ -1,10 +1,14 @@
 import { useState } from "react";
 
 export default function More() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndices, setActiveIndices] = useState<number[]>([]);
 
   const handleOnClick = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
+    if (activeIndices.includes(index)) {
+      setActiveIndices(activeIndices.filter((i) => i !== index)); // Close the clicked dropdown if already open
+    } else {
+      setActiveIndices([...activeIndices, index]); // Open the clicked dropdown
+    }
   };
 
   return (
@@ -12,30 +16,36 @@ export default function More() {
       <h2>Learn More About Bukidnon</h2>
       <div className="dropdown-menu">
         {/* Natural Wonders and Cultural Treasures */}
-        <div className={`dropdown-button ${activeIndex === 0 ? 'dropdown-clicked' : ''}`} onClick={() => handleOnClick(0)}>
+        <div
+          className={`dropdown-button ${activeIndices.includes(0) ? "dropdown-clicked" : ""}`}
+          onClick={() => handleOnClick(0)}
+          id='one'
+	>
           <h4>Natural Wonders and Cultural Treasures</h4>
         </div>
-        {activeIndex === 0 && (
+        {activeIndices.includes(0) && (
           <div className="dropdown-content">
-            <h3>Natural Wonders and Cultural Treasures</h3>
             <p>
               Bukidnon is known for its lush landscapes and rich cultural
               heritage. Its rolling hills, verdant plains, and the majestic
               Kitanglad Mountain Range make it a haven for nature enthusiasts.
               The Kaamulan Festival celebrates the traditions of the Bukidnon,
               Higaunon, Manobo, Talaandig, Tigwahanon, Matigsalug, and
-              Umayamnon tribes.{" "}
+              Umayamnon tribes.
             </p>
           </div>
         )}
 
         {/* Challenges and Socioeconomic Issues */}
-        <div className={`dropdown-button ${activeIndex === 1 ? 'dropdown-clicked' : ''}`} onClick={() => handleOnClick(1)}>
+        <div
+          className={`dropdown-button ${activeIndices.includes(1) ? "dropdown-clicked" : ""}`}
+          onClick={() => handleOnClick(1)}
+          id='two'
+	>
           <h4>Challenges and Socioeconomic Issues</h4>
         </div>
-        {activeIndex === 1 && (
+        {activeIndices.includes(1) && (
           <div className="dropdown-content">
-            <h3>Challenges and Socioeconomic Issues</h3>
             <p>
               <strong>Land Conflicts:</strong> Agribusinesses displaced
               indigenous communities, intensifying land disputes.{" "}
@@ -74,12 +84,15 @@ export default function More() {
         )}
 
         {/* Cultural Practices: Conflict Resolution */}
-        <div className={`dropdown-button ${activeIndex === 2 ? 'dropdown-clicked' : ''}`} onClick={() => handleOnClick(2)}>
+        <div
+          className={`dropdown-button ${activeIndices.includes(2) ? "dropdown-clicked" : ""}`}
+          onClick={() => handleOnClick(2)}
+          id='three'
+	>
           <h4>Cultural Practices: Conflict Resolution</h4>
         </div>
-        {activeIndex === 2 && (
+        {activeIndices.includes(2) && (
           <div className="dropdown-content">
-            <h3>Cultural Practices: Conflict Resolution</h3>
             <p>
               The Higaonon tribe utilizes the "paghusay" system, involving
               community elders, rituals, and consensus. This process emphasizes
@@ -96,12 +109,15 @@ export default function More() {
         )}
 
         {/* Activism and Social Movements */}
-        <div className={`dropdown-button ${activeIndex === 3 ? 'dropdown-clicked' : ''}`} onClick={() => handleOnClick(3)}>
+        <div
+          className={`dropdown-button ${activeIndices.includes(3) ? "dropdown-clicked" : ""}`}
+          onClick={() => handleOnClick(3)}
+          id='four'
+	>
           <h4>Activism and Social Movements</h4>
         </div>
-        {activeIndex === 3 && (
+        {activeIndices.includes(3) && (
           <div className="dropdown-content">
-            <h3>Activism and Social Movements</h3>
             <p>
               <strong>Student Activism:</strong> Protests against perceived
               suppression of student rights at Central Mindanao University.{" "}
@@ -140,12 +156,15 @@ export default function More() {
         )}
 
         {/* References and Further Reading */}
-        <div className={`dropdown-button ${activeIndex === 4 ? 'dropdown-clicked' : ''}`} onClick={() => handleOnClick(4)}>
+        <div
+          className={`dropdown-button ${activeIndices.includes(4) ? "dropdown-clicked" : ""}`}
+          onClick={() => handleOnClick(4)}
+	  id='five'
+        >
           <h4>References and Further Reading</h4>
         </div>
-        {activeIndex === 4 && (
+        {activeIndices.includes(4) && (
           <div className="dropdown-content">
-            <h3>References and Further Reading</h3>
             <ul>
               <li>
                 <a
