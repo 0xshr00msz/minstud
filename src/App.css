@@ -402,6 +402,7 @@ svg {
 #gallery {
 	text-align: center;
 	align-content: center;
+	align-items: center;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
