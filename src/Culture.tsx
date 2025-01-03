@@ -25,10 +25,6 @@ export default function Culture() {
     setActiveTribeContent(tribeContent[id] || "No content available"); // Map id to content or show fallback
   };
 
-  const closePopup = () => {
-    setActiveTribe(null);
-  };
-
   return (
     <div id="culture">
       <div>

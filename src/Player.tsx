@@ -4,7 +4,7 @@ import idana from './assets/idana.mp3';
 
 export default function Player() {
   const [isMuted, setIsMuted] = useState<boolean>(false);
-  const [play, { sound, stop }] = useSound(idana, {
+  const [play, { sound }] = useSound(idana, {
     loop: true, // Ensures the song loops
     preload: true, // Preloads the audio file
   });
