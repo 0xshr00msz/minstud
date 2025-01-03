@@ -54,7 +54,7 @@
 
 .members > ol {
 	display:flex;
-	gap: 20px;
+	gap: 10px;
 	flex-direction: row;
 	padding: 0;
 	transform: translateY(34vh);
