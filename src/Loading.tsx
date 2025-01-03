@@ -29,7 +29,8 @@ export default function Loading() {
           <li>Magpusao</li>
           <li>Mante</li>
           <li>Manalo</li>
-          <li>Veloso</li>
+          <li>Morgia</li>
+	  <li>Veloso</li>
           <li>Veras</li>
         </ol>
       </div>
